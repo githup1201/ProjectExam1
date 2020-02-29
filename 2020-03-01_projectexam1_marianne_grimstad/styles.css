@@ -1,0 +1,1389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.menu {
+  background-color: black;
+  height: 160px;
+  justify-content: flex-start;
+}
+
+.menu a img{
+  width: 50%;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo-2 {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+ #logo {
+    display: none;
+ }
+
+.topnav {
+    overflow: hidden;
+    width:100%;   
+}
+
+.topnav a {
+    display: inline;
+    text-transform: capitalize;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    float: left;
+    display: block;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: #2988CE;   
+}
+
+.topnav a.active {
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 1999px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display:inline-flex;
+  }
+}
+
+@media screen and (max-width: 1999px) {
+    .topnav.responsive  {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+    
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    padding: 5px;
+  }
+}
+
+.header {
+    width: 100%;
+    background-image: url(images/earth-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    flex-direction: column;    
+}
+
+.header h1 {
+    color: white;
+    font-family: 'courier new', serif;
+    font-size: 2em;
+    font-weight: 60;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    top: 15px;
+}
+
+.header h2 {
+    color: white;
+    font-family: 'courier new', serif;
+    font-size: 0.8em;
+    font-weight: 5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
+.scroll {
+    position: relative;
+    top: 345px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size:12px;
+}
+
+.circle {
+    position: relative;
+    text-align: center;
+    top: 340px;   
+}
+
+.circle img {
+    width: 45%;
+}
+
+.top-icons {
+    position: relative;
+    top: 60px;
+    left:-180px;
+    width: 18px;
+}
+
+  .top-icons img {
+    margin-bottom: 20px;
+    display:inline-flex;
+}
+
+.top-icons p {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size:12px;
+    margin-top:5px;
+}
+
+.content h3, h2 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px black;
+    padding-bottom: 10px;
+}
+
+.content h3 {
+    font-size: 0.8em;   
+}
+
+.content h2 {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: white;
+    font-size: 0.8em;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    padding: 10px 0 5px 0;   
+}
+
+.content {
+  background-color: #717171;
+  height: 2500px;
+}
+
+.content img {
+   width: 80%;
+   margin-bottom: 10px;    
+}
+
+.image {
+    border-radius: 10px;   
+}
+
+.round-img {
+  border-radius: 50%;   
+}
+
+
+/* timeline
+--------------------*/
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  border-width:thin;
+  border-style:dashed;
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content*/ 
+.container {
+  padding: 10px 20px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #2988CE;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0%;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -16px;
+}
+
+
+.content-timeline {
+  padding: 5px 20px;
+  position: relative;  
+}
+
+.feature-4 {
+    width:100%;
+    background-color: #717171;
+    order: 4;
+    height: 400px;
+    flex-direction: column;
+}
+
+.feature-4:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.feature-4 h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.left-4, right-4 {
+    width: 50%;    
+}
+
+.column-4 {
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.feature-4 a:hover {
+    background-color: black;   
+}
+
+.button {
+    background-color: white;
+    color: #2988CE;
+    border-radius: 10px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 3px solid #2988CE;
+}
+
+.button-2 {
+    background-color: white;
+    color: #2988CE;
+    border-radius: 10px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 3px solid #2988CE;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer a {
+  display: inline;
+  text-transform: capitalize;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  cursor: pointer;
+  float: left;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+    color: #2988CE;
+}
+
+.footer img {
+    width: 20px;
+}
+
+.footer img:hover {
+    color: #2988CE;
+}
+
+.copyright {
+   display: inline-block;
+   font-size: 12px;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   word-spacing: 2px;
+   text-align: center;
+}
+
+/* About page
+------------------------*/
+
+.column {
+    float:left;
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+.left-1 {
+    width: 30%;
+    margin-left: 30px;
+}
+
+.right-1 {
+    width: 30%;
+    margin-left: 30px;
+}
+
+.left-1 p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.4em;
+}
+
+.middle {
+    width: 30%;
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+.middle p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.column img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.feature-1:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.feature-1 {
+    width: 100%;
+    background-image: url(images/earth-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+.feature-1 p, h2 {
+    color: white;
+}
+
+.feature-1 h2{
+   font-size: 20px;
+   color: white;
+   font-family: 'courier new', serif;
+   font-size: 2em;
+   font-weight: 60;
+   margin-bottom: 10px;
+}
+
+
+input[type="text"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: 2px 2px white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;   
+}
+
+label  {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;  
+}
+
+/* Events page
+---------------------*/
+.feature-2 {
+  width: 100%;
+  background-color: black;
+}
+
+.feature-2 h1{
+   color: white;
+   font-family: 'courier new', serif;
+   font-size: 2em;
+   font-weight: 60;
+}
+
+.feature-2 p, h3, h4 {
+    color: white;   
+}
+
+.feature-2:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.column-2 {
+    float:left;
+    padding: 30px;
+    width: 33.33%;
+}
+
+.column-2 img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.middle-2 {
+    text-align: center;
+    margin-right: 80px;
+}
+
+.events h3 {
+   margin: 5px 0px;
+   font-family: 'Open Sans', sans-serif;    
+}
+
+.events p {
+   text-shadow: 1px 0px grey;
+   line-height: 1.4em;
+}
+
+.events {
+  margin-bottom: 40px;  
+}
+
+
+/* Picofday page
+----------------------*/
+
+.feature-3 {
+  width: 100%;
+  background-color: black;
+}
+
+.feature-3 h2, p {
+    color: white;
+}
+
+.column-3 {
+    width:80%;
+    padding: 20px;
+  
+}
+
+.feature-3:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.first {
+    width: 65%;
+}
+
+.second {
+    width: 25%;
+}
+
+.first img {
+    width: 70%;
+}
+
+.first h1 {
+    color: white;
+    font-family: 'courier new', serif;
+    font-size: 2em;
+    font-weight: 60;
+    margin-bottom: 20px;   
+}
+
+.second p {
+    line-height: 1.3em;
+}
+
+.description h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.pictures p {
+    font-family: 'Roboto', sans-serif;
+    font-size:18px;
+    margin-bottom: 10px;
+}
+
+
+/* MEDIA QUERIES
+--------------------------------*/
+
+ /* Mobile*/ 
+@media only screen and (max-width: 500px) {
+    
+  .header {
+     height: 460px;   
+    }
+    
+  .header h1, .header h2  {
+      top: 50px;
+}
+    
+.scroll {
+    display: none;
+}
+    
+.circle {
+    display: none;   
+    }
+
+.topnav a {
+    font-size: 12px;
+}
+    
+.top-icons  {
+   position: relative;
+   top: -10px;
+   left:-190px;
+   width: 18px;
+   margin-left: 30px;  
+    }
+     
+  #logo {
+    display: none;
+ }
+    
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    order: 2;
+  }
+     
+  .content {
+    order: 1;
+    height: 2400px;
+    justify-content: flex-start;
+    
+} 
+
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .left::after, .right::after {
+     left: 15px;
+  }
+  
+  .right {
+    left: 0%;
+  }
+    
+ .round-img {
+    margin-left: -30px;    
+    }
+    
+.feature-4 {
+    width:100%;
+    height: 350px;
+    flex-direction: column;
+}
+    
+.column-4 {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+    
+.feature-4 h2 {
+    font-size: 16px;    
+    }
+.button, .button-2 {
+    font-size: 13px;
+    }
+    
+  .footer {
+    padding: 30px;
+    flex-direction: column;
+    height: 450px;
+    order: 3;
+}
+ 
+  .copyright {
+    margin-top: 10px;
+}
+    
+/* About page 
+---------------*/
+ .feature-1 {
+    height: 1200px;
+    width: 100%;
+    }
+    
+.feature-1 h2 {
+    font-size: 20px;   
+    }
+    
+.column {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0; 
+    }
+    
+.column p {
+    font-size: 12px    
+    }
+    
+.column h1 {
+    font-size: 18px;
+}
+    
+    
+/* Events page
+-----------------*/
+.feature-2 {
+    height: 2000px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.feature-2 h1{
+     font-size: 27px;
+     margin-bottom: 15px;
+    }
+ 
+.column-2 {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    }
+    
+.column-2 img{
+    width: 250px;
+    height: 250px;
+    margin-left: 60px;
+    }
+
+    
+/* Picofday page
+----------------*/
+ .feature-3 {
+    height: 900px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    }   
+    
+.column-3 {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+ 
+    }
+    
+.first h1 {
+     font-size: 23px;   
+    }
+       
+}
+  
+/* Tablet */
+@media (min-width: 501px) and (max-width: 767px) {
+   .page {
+    width: 100%;
+    margin: 0 auto;
+  }
+    
+  .logo-2 {
+    width: 10%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+    
+  .topnav a {
+    font-size: 14px;
+    margin-right: 20px;
+}
+    
+  .menu {
+    height: 175px;    
+ }
+    
+  .header {
+    height: 700px;
+  }
+    
+  .header h1 {
+    font-size: 3em;     
+}
+    
+  .header h2 {
+    font-size: 1.3em;    
+}
+    
+  .scroll {
+     top: 330px;
+     font-size: 12px;
+    }
+    
+  .circle {
+     top: 325px;  
+    }
+    
+  .circle img {
+     width: 35%;   
+    }
+    
+  .top-icons {
+    position: relative;
+    top: 40px;
+    left:-270px;
+    width: 18px;
+    margin-left: 30px;
+}
+    
+  .content {
+    order: 1;
+    height: 2850px;
+} 
+
+    
+  .timeline::after {
+    left:31px;
+  }
+  
+  
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  .right {
+    left: 0%;
+  }
+    
+  .content img {
+    width: 60%;   
+ }
+    
+ .round-img {
+    margin-left: -30px; }
+  
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    order: 2;
+  }
+    
+  .event {
+    color:white;
+}
+    
+    
+.feature-4 {
+    width:100%;
+    height: 330px;
+    flex-direction: column;
+}
+    
+.column-4 {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+    
+ .footer {
+    padding: 20px;
+    flex-direction: column;
+    height: 450px;
+    order: 3;
+}
+  .footer a {
+    font-size: 16px;    
+    }
+    
+    
+ /* About page 
+---------------*/
+
+ .feature-1 {
+    height: 1200px;
+    width: 100%;
+    }
+    
+ .feature-1 h2 {
+    font-size: 24px;   
+    }
+    
+.column {
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0;
+    margin-left: 80px;
+}
+        
+.column p {
+    font-size: 13px;    
+    }
+    
+.column h1 {
+    font-size: 18px;
+}   
+    
+/* Events page
+-----------------*/
+.feature-2 {
+    height: 1850px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.column-2 {
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;    
+}
+    
+/* Picofday page
+----------------*/
+ .feature-3 {
+    height: 900px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    }   
+    
+.column-3 {
+    width: 80%; 
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    }
+    
+.first h1 {
+     font-size: 28px;   
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 1021px) {
+    
+  .menu {
+    height: 175px;    
+    }
+      
+  .logo-2 {
+    width: 8%;
+}
+    
+  .topnav a {
+    font-size: 14px;
+    margin-right: 20px;
+}
+    
+  .header {
+    height: 700px;
+  } 
+    
+  .header h1 {
+    font-size: 3em;     
+}
+    
+  .header h2 {
+    font-size: 1.3em;
+}
+
+  .scroll {
+     top: 320px;
+     font-size: 13px;
+    }
+    
+  .circle {
+     top: 315px;  
+    }
+    
+  .circle img {
+     width: 35%;   
+    }
+    
+  .top-icons {
+    position: relative;
+    top: 40px;
+    left:-380px;
+    width: 18px;
+}
+     
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    order:2;
+  }  
+        
+  .footer {
+    height: 200px;
+    order: 3;
+}
+  .content {
+    order: 1;
+    height: 2400px;
+ } 
+    
+  .content img {
+    width: 70%;
+    margin-left: 100px;
+    }
+    
+    
+ .left h2 {
+    float: right;
+}
+
+.feature-4 {
+    width:100%;
+    flex-direction: column;
+
+}
+    
+.column-4 {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;    
+    }
+    
+    
+/* About page
+-----------------*/
+.feature-1 {
+  height: 1100px;
+    }
+    
+ .feature-1 h2 {
+    font-size: 24px ;   
+    }
+    
+ .column p {
+    font-size: 13px;    
+    } 
+    
+.column {
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0;
+    margin-left: 80px;
+    }
+    
+    
+/* Events page
+-----------------*/
+.feature-2 {
+    height: 1600px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+    
+.column-2 {
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 5px;
+}
+    
+.events {
+    width: 80%;
+    margin-left: 60px;
+    }
+    
+    
+/* Picofday page
+----------------*/
+ .feature-3 {
+    height: 900px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    }   
+    
+.column-3 {
+    width: 80%; 
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1022px) and (max-width: 1280px) {
+    
+  .menu {
+    height: 180px;    
+    }
+    
+  .logo-2 {
+    width: 7%;
+    margin-left:30px;
+    margin-top: 20px;
+}
+    
+  .topnav a {
+    font-size: 15px;
+    margin-right: 20px;
+}
+    
+  .header {
+     height: 680px;
+    }
+    
+  .header h1 {
+    font-size: 3.5em;     
+}
+    
+  .header h2 {
+    font-size: 1.5em;    
+}
+    
+  .scroll {
+     top: 330px;
+     font-size: 13px;
+    }
+    
+  .circle {
+     top: 325px;  
+    }
+    
+  .circle img {
+     width: 45%;   
+    }
+    
+  .top-icons {
+    position: relative;
+    top: -130px;
+    left:-510px;
+    width: 25px; 
+}
+    
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    order:2;
+  }  
+        
+  .footer {
+    height: 200px;
+    order: 3;
+}
+  .content {
+    order: 1;
+    height: 2750px;
+ } 
+
+   .content img {
+    width: 70%;
+    margin-left: 150px;
+    }
+    
+  .content p {
+   font-size:13px;    
+    }
+    
+  .content h2 {
+   font-size: 20px;    
+    }
+
+  .content h3 {
+    font-size: 16px;
+    }
+    
+ .left h2 {
+    float: right;
+}
+    
+    
+/* About page
+-----------------*/
+.feature-1 {
+  height: 800px;    
+    }
+    
+/* Picofday page
+------------------*/
+.feature-3 {
+    height: 750px;    
+    }
+    
+/* Event page
+--------------------*/
+    
+.feature-2 {
+    height: 1350px;
+    } 
+    
+.event-head {
+    position: relative;
+    top: -600px;
+    left: 48%;
+}
+    
+.left-2 {
+    position: relative;
+    top: 80px;
+    margin-left: -50px;
+}
+    
+.middle-2 img {
+    position: relative;
+    top: -260px;
+    }
+    
+.right-2 {
+    position: relative;
+    top: -170px;
+    }
+   
+}
+
+@media (min-width: 1281px){
+    
+  .menu {
+    height: 200px;    
+    }    
+
+  .logo-2 {
+    width: 8%;
+    margin-left:30px;
+    margin-top: 20px;
+}
+    
+  .topnav a {
+    font-size: 15px;
+    margin-right: 25px;
+}
+    
+  .header {
+     height: 620px;   
+    }
+    
+  .header h1 {
+    font-size: 3.8em;
+    position: relative;
+    top: 35px;
+}
+    
+  .header h2 {
+    font-size: 1.3em;
+    position: relative;
+    top: 35px;
+}
+
+  .top-icons {
+    position: relative;
+    top: -160px;
+    left:-670px;
+    width: 25px; 
+}
+ 
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    order:2;
+  }  
+        
+ .content {
+    order: 1;
+    height: 2800px;
+ } 
+
+ .content img {
+    width: 70%;
+    margin-left: 150px;
+    }
+
+.content p {
+   font-size:14px;    
+    }
+    
+.content h2 {
+   font-size: 20px;    
+    }
+
+.content h3 {
+    font-size: 18px;
+  
+    }
+    
+ .left h2 {
+    float: right;
+}
+    
+  .footer {
+    height: 200px;
+    order: 3;
+}
+    
+/* About page
+-----------------*/
+.feature-1 {
+  height: 800px;   
+    }
+    
+    
+/* Picofday page
+------------------*/
+.feature-3 {
+    height: 800px;    
+    }
+    
+/* Events page
+-----------------*/
+.feature-2 {
+    height: 1000px;
+    }
+    
+.event-head {
+    position: relative;
+    top: -600px;
+    left: 47%;
+}
+    
+.events {
+    position: relative;
+    top: -100px;
+}
+    
+.middle-2 img {
+    position: relative;
+    top: -300px;
+    }
+    
+.right-2 {
+    position: relative;
+    top: -150px;
+    
+    }
+   
+}
+
+    
+
