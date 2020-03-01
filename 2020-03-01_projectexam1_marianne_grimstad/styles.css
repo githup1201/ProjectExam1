@@ -735,7 +735,7 @@ label  {
 /* Events page
 -----------------*/
 .feature-2 {
-    height: 2000px;
+    height: 1950px;
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
@@ -758,6 +758,10 @@ label  {
     width: 250px;
     height: 250px;
     margin-left: 60px;
+    }
+    
+    .events p {
+        font-size: 14px;
     }
 
     
